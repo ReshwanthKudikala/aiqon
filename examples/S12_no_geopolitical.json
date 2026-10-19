@@ -1,0 +1,26 @@
+{
+  "shipment_id": "S12",
+  "origin": "Shanghai",
+  "destination": "Rotterdam",
+  "priority": "balanced",
+  "routes": [
+    {
+      "route_id": "P",
+      "cost": 1300,
+      "transit_hours": 230,
+      "delay_probability": 0.16
+    },
+    {
+      "route_id": "Q",
+      "cost": 1200,
+      "transit_hours": 210,
+      "delay_probability": 0.12
+    },
+    {
+      "route_id": "R",
+      "cost": 2500,
+      "transit_hours": 400,
+      "delay_probability": 0.5
+    }
+  ]
+}

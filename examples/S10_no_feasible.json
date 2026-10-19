@@ -1,0 +1,47 @@
+{
+  "shipment_id": "S10",
+  "origin": "Shanghai",
+  "destination": "Rotterdam",
+  "priority": "balanced",
+  "routes": [
+    {
+      "route_id": "C",
+      "cost": 1000,
+      "transit_hours": 300,
+      "delay_probability": 0.4,
+      "risks": {
+        "geopolitical": 0.1
+      }
+    },
+    {
+      "route_id": "F",
+      "cost": 1800,
+      "transit_hours": 200,
+      "delay_probability": 0.2,
+      "risks": {
+        "geopolitical": 0.8
+      }
+    },
+    {
+      "route_id": "M",
+      "cost": 1300,
+      "transit_hours": 250,
+      "delay_probability": 0.08,
+      "risks": {
+        "geopolitical": 0.3
+      }
+    },
+    {
+      "route_id": "D",
+      "cost": 1900,
+      "transit_hours": 320,
+      "delay_probability": 0.45,
+      "risks": {
+        "geopolitical": 0.85
+      }
+    }
+  ],
+  "constraints": {
+    "max_cost": 500
+  }
+}

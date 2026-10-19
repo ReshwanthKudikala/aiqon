@@ -1,0 +1,23 @@
+{
+  "shipment_id": "X01",
+  "origin": "Shanghai",
+  "destination": "Rotterdam",
+  "priority": "balanced",
+  "routes": [
+    {
+      "route_id": "A",
+      "cost": 1000,
+      "transit_hours": 200,
+      "delay_probability": 0.1,
+      "risks": {
+        "geopolitical": 0.2
+      }
+    },
+    {
+      "route_id": "B",
+      "cost": 1100,
+      "transit_hours": 210,
+      "delay_probability": 0.08
+    }
+  ]
+}

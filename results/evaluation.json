@@ -1,0 +1,4107 @@
+{
+  "corpus_size": 20,
+  "per_shipment": [
+    {
+      "shipment_id": "S01",
+      "purpose": "Four-way conflict among cost, time, delay, geopolitical",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.5,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.4245495495495496,
+          "balance_gap_B": 1.6981981981981984,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1800.0,
+              "abs_gap": 800.0,
+              "rel_gap": 0.8,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.2,
+              "abs_gap": 0.12000000000000001,
+              "rel_gap": 1.5,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.8,
+              "abs_gap": 0.7000000000000001,
+              "rel_gap": 7.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5366366366366366,
+          "balance_gap_B": 2.1465465465465465,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "M",
+          "runner_up_route_id": "C",
+          "score_margin": 0.29909909909909915,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 300.0,
+              "rel_gap": 0.3,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.25,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.19999999999999998,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.25416666666666665,
+          "balance_gap_B": 1.0166666666666666,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "M",
+          "runner_up_route_id": "C",
+          "score_margin": 0.17038288288288295,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 300.0,
+              "rel_gap": 0.3,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.25,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.19999999999999998,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.25416666666666665,
+          "balance_gap_B": 1.0166666666666666,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "M",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "M"
+    },
+    {
+      "shipment_id": "S02",
+      "purpose": "Tiny delay improvement against a large cost increase",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "F",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.010000000000000009,
+              "rel_gap": 0.11111111111111122,
+              "best": 0.09
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.21022727272727273,
+          "balance_gap_B": 0.8409090909090909,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1500.0,
+              "abs_gap": 500.0,
+              "rel_gap": 0.5,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 180.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.03,
+              "rel_gap": 0.3333333333333333,
+              "best": 0.09
+            },
+            "geopolitical": {
+              "value": 0.7,
+              "abs_gap": 0.49999999999999994,
+              "rel_gap": 2.4999999999999996,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.45508658008658004,
+          "balance_gap_B": 1.8203463203463202,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "M",
+          "runner_up_route_id": "C",
+          "score_margin": 0.04545454545454549,
+          "objectives": {
+            "cost": {
+              "value": 1600.0,
+              "abs_gap": 600.0,
+              "rel_gap": 0.6,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.09,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.09
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.4017857142857143,
+          "balance_gap_B": 1.6071428571428572,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": 0.19155844155844157,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.010000000000000009,
+              "rel_gap": 0.11111111111111122,
+              "best": 0.09
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.21022727272727273,
+          "balance_gap_B": 0.8409090909090909,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "C",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "C"
+    },
+    {
+      "shipment_id": "S03",
+      "purpose": "Brief's example: higher cost, much lower delay",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "R",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.31547619047619047,
+          "balance_gap_B": 1.2619047619047619,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "C",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1600.0,
+              "abs_gap": 600.0,
+              "rel_gap": 0.6,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 180.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.06999999999999999,
+              "rel_gap": 0.8749999999999999,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.6,
+              "abs_gap": 0.39999999999999997,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.37202380952380953,
+          "balance_gap_B": 1.4880952380952381,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "F",
+          "score_margin": 0.369047619047619,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 200.0,
+              "rel_gap": 0.2,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.20833333333333334,
+          "balance_gap_B": 0.8333333333333334,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "C",
+          "score_margin": 0.10714285714285712,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 200.0,
+              "rel_gap": 0.2,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.20833333333333334,
+          "balance_gap_B": 0.8333333333333334,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "R"
+    },
+    {
+      "shipment_id": "S04",
+      "purpose": "Two feasible routes: min-max erases gap size",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "time": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.35000000000000003,
+              "rel_gap": 7.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "time": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.35000000000000003,
+              "rel_gap": 7.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "B",
+          "runner_up_route_id": "A",
+          "score_margin": 0.5,
+          "objectives": {
+            "cost": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "time": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": 0.25,
+          "objectives": {
+            "cost": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "time": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.35000000000000003,
+              "rel_gap": 7.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "A",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "A"
+    },
+    {
+      "shipment_id": "S05",
+      "purpose": "S04 plus a non-winning route that changes the winner",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "time": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.35000000000000003,
+              "rel_gap": 7.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "time": {
+              "value": 100.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.35000000000000003,
+              "rel_gap": 7.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "B",
+          "runner_up_route_id": "A",
+          "score_margin": 0.5,
+          "objectives": {
+            "cost": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "time": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.00125,
+          "balance_gap_B": 0.005,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "B",
+          "runner_up_route_id": "A",
+          "score_margin": 0.24875,
+          "objectives": {
+            "cost": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "time": {
+              "value": 101.0,
+              "abs_gap": 1.0,
+              "rel_gap": 0.01,
+              "best": 100.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.00125,
+          "balance_gap_B": 0.005,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "B",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "B"
+    },
+    {
+      "shipment_id": "S06",
+      "purpose": "One route best on every objective",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "G",
+          "runner_up_route_id": "H",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "G",
+          "runner_up_route_id": "H",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "G",
+          "runner_up_route_id": "H",
+          "score_margin": 0.16666666666666669,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "G",
+          "runner_up_route_id": "H",
+          "score_margin": 0.18333333333333335,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "G",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "G"
+    },
+    {
+      "shipment_id": "S07",
+      "purpose": "Delay identical on all routes: normalized delay term is 0",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.5,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.15
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1800.0,
+              "abs_gap": 800.0,
+              "rel_gap": 0.8,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.15
+            },
+            "geopolitical": {
+              "value": 0.8,
+              "abs_gap": 0.7000000000000001,
+              "rel_gap": 7.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": 0.14285714285714282,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.5,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.15
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": 0.04642857142857143,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.5,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.15
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "C",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "C"
+    },
+    {
+      "shipment_id": "S08",
+      "purpose": "Cost tie: min_cost falls through to delay tie-break",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "R_B",
+          "runner_up_route_id": "R_A",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 260.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.23809523809523808,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.05,
+              "rel_gap": 1.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.3333333333333333,
+          "balance_gap_B": 1.3333333333333333,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "R_C",
+          "runner_up_route_id": "R_A",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1500.0,
+              "abs_gap": 500.0,
+              "rel_gap": 0.5,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.4,
+              "abs_gap": 0.10000000000000003,
+              "rel_gap": 0.3333333333333335,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R_B",
+          "runner_up_route_id": "R_A",
+          "score_margin": 0.33333333333333337,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 260.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.23809523809523808,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.05,
+              "rel_gap": 1.0,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.3333333333333333,
+          "balance_gap_B": 1.3333333333333333,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "R_A",
+          "runner_up_route_id": "R_B",
+          "score_margin": 0.033333333333333326,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 220.0,
+              "abs_gap": 10.0,
+              "rel_gap": 0.047619047619047616,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.2,
+              "abs_gap": 0.15000000000000002,
+              "rel_gap": 3.0000000000000004,
+              "best": 0.05
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.3,
+          "balance_gap_B": 1.2,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R_A",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "R_A"
+    },
+    {
+      "shipment_id": "S09",
+      "purpose": "One feasible route under max_transit_hours",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "A",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "A"
+    },
+    {
+      "shipment_id": "S10",
+      "purpose": "Empty feasible set",
+      "status": "no_feasible_route",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": null
+        },
+        "min_time": {
+          "recommended_route_id": null
+        },
+        "min_risk": {
+          "recommended_route_id": null
+        },
+        "balanced": {
+          "recommended_route_id": null
+        }
+      }
+    },
+    {
+      "shipment_id": "S11",
+      "purpose": "Geopolitical risk changes the balanced winner",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.9,
+              "abs_gap": 0.85,
+              "rel_gap": 17.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.23611111111111113,
+          "balance_gap_B": 0.9444444444444445,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.9,
+              "abs_gap": 0.85,
+              "rel_gap": 17.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.23611111111111113,
+          "balance_gap_B": 0.9444444444444445,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "P",
+          "runner_up_route_id": "Q",
+          "score_margin": 0.41959064327485385,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.08333333333333333,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 230.0,
+              "abs_gap": 20.0,
+              "rel_gap": 0.09523809523809523,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.16,
+              "abs_gap": 0.04000000000000001,
+              "rel_gap": 0.3333333333333334,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.07186234817813766,
+          "balance_gap_B": 0.28744939271255066,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "P",
+          "runner_up_route_id": "Q",
+          "score_margin": 0.16424876293297347,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.08333333333333333,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 230.0,
+              "abs_gap": 20.0,
+              "rel_gap": 0.09523809523809523,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.16,
+              "abs_gap": 0.04000000000000001,
+              "rel_gap": 0.3333333333333334,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.07186234817813766,
+          "balance_gap_B": 0.28744939271255066,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "P",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "P"
+    },
+    {
+      "shipment_id": "S12",
+      "purpose": "S11 with geopolitical absent on every route",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.3333333333333333,
+        "time": 0.3333333333333333,
+        "delay": 0.33333333333333337,
+        "geopolitical": 0.0
+      },
+      "balanced_weight_source": "default_geopolitical_unavailable",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": 0.10526315789473686,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": 0.09581646423751689,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "Q",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "Q"
+    },
+    {
+      "shipment_id": "S13",
+      "purpose": "Congestion differs, scored fields equal; input order reversed",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "R1",
+          "runner_up_route_id": "R2",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "R1",
+          "runner_up_route_id": "R2",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R1",
+          "runner_up_route_id": "R2",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "R1",
+          "runner_up_route_id": "R2",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R1",
+      "balance_gap_minimizer_tied_with": [
+        "R2"
+      ],
+      "weighted_score_minimizer": "R1"
+    },
+    {
+      "shipment_id": "S14",
+      "purpose": "Near-tie with a delay value on the clipping boundary",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.27,
+              "abs_gap": 0.17,
+              "rel_gap": 1.7,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.04722222222222222,
+          "balance_gap_B": 0.18888888888888888,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "B",
+          "runner_up_route_id": "A",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1100.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.1,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.05,
+          "balance_gap_B": 0.2,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "B",
+          "runner_up_route_id": "A",
+          "score_margin": 0.09444444444444444,
+          "objectives": {
+            "cost": {
+              "value": 1100.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.1,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.05,
+          "balance_gap_B": 0.2,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "A",
+          "runner_up_route_id": "B",
+          "score_margin": 0.002777777777777782,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.27,
+              "abs_gap": 0.17,
+              "rel_gap": 1.7,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.3
+            }
+          },
+          "weighted_score_S": 0.04722222222222222,
+          "balance_gap_B": 0.18888888888888888,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "A",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "A"
+    },
+    {
+      "shipment_id": "S15",
+      "purpose": "S03 with unequal explicit weights",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.7,
+        "time": 0.1,
+        "delay": 0.1,
+        "geopolitical": 0.1
+      },
+      "balanced_weight_source": "explicit",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "R",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.1261904761904762,
+          "balance_gap_B": 1.2619047619047619,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "C",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1600.0,
+              "abs_gap": 600.0,
+              "rel_gap": 0.6,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 180.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.06999999999999999,
+              "rel_gap": 0.8749999999999999,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.6,
+              "abs_gap": 0.39999999999999997,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.5988095238095237,
+          "balance_gap_B": 1.4880952380952381,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "F",
+          "score_margin": 0.369047619047619,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 200.0,
+              "rel_gap": 0.2,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.23333333333333334,
+          "balance_gap_B": 0.8333333333333334,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "R",
+          "score_margin": 0.10714285714285715,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 60.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.1261904761904762,
+          "balance_gap_B": 1.2619047619047619,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "C"
+    },
+    {
+      "shipment_id": "S16",
+      "purpose": "Single supplied route",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "X",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "X",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "X",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "X",
+          "runner_up_route_id": null,
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 200.0
+            },
+            "delay": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "X",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "X"
+    },
+    {
+      "shipment_id": "S17",
+      "purpose": "All scored values equal",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "R_A",
+          "runner_up_route_id": "R_B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 240.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.25,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.25
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "R_A",
+          "runner_up_route_id": "R_B",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 240.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.25,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.25
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R_A",
+          "runner_up_route_id": "R_B",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 240.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.25,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.25
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "R_A",
+          "runner_up_route_id": "R_B",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 240.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 240.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.25,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.25
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R_A",
+      "balance_gap_minimizer_tied_with": [
+        "R_B"
+      ],
+      "weighted_score_minimizer": "R_A"
+    },
+    {
+      "shipment_id": "S18",
+      "purpose": "S11 with explicit zero geopolitical weight",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.3333333333333333,
+        "time": 0.3333333333333333,
+        "delay": 0.33333333333333337,
+        "geopolitical": 0.0
+      },
+      "balanced_weight_source": "explicit",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.9,
+              "abs_gap": 0.85,
+              "rel_gap": 17.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.9444444444444445,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.9,
+              "abs_gap": 0.85,
+              "rel_gap": 17.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.9444444444444445,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "P",
+          "runner_up_route_id": "Q",
+          "score_margin": 0.41959064327485385,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 100.0,
+              "rel_gap": 0.08333333333333333,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 230.0,
+              "abs_gap": 20.0,
+              "rel_gap": 0.09523809523809523,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.16,
+              "abs_gap": 0.04000000000000001,
+              "rel_gap": 0.3333333333333334,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.05,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.09581646423751689,
+          "balance_gap_B": 0.28744939271255066,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "Q",
+          "runner_up_route_id": "P",
+          "score_margin": 0.09581646423751689,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 210.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 210.0
+            },
+            "delay": {
+              "value": 0.12,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.12
+            },
+            "geopolitical": {
+              "value": 0.9,
+              "abs_gap": 0.85,
+              "rel_gap": 17.0,
+              "best": 0.05
+            }
+          },
+          "weighted_score_S": 0.0,
+          "balance_gap_B": 0.9444444444444445,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "P",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "Q"
+    },
+    {
+      "shipment_id": "S19",
+      "purpose": "Cost limit applied before normalization",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.2,
+              "best": 250.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "M",
+          "runner_up_route_id": "C",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 300.0,
+              "rel_gap": 0.3,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 250.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.19999999999999998,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "C",
+          "runner_up_route_id": "M",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1000.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 300.0,
+              "abs_gap": 50.0,
+              "rel_gap": 0.2,
+              "best": 250.0
+            },
+            "delay": {
+              "value": 0.4,
+              "abs_gap": 0.32,
+              "rel_gap": 4.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.1,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "M",
+          "runner_up_route_id": "C",
+          "score_margin": 0.0,
+          "objectives": {
+            "cost": {
+              "value": 1300.0,
+              "abs_gap": 300.0,
+              "rel_gap": 0.3,
+              "best": 1000.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 250.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.3,
+              "abs_gap": 0.19999999999999998,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.1
+            }
+          },
+          "weighted_score_S": 0.5,
+          "balance_gap_B": 2.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "C",
+      "balance_gap_minimizer_tied_with": [
+        "M"
+      ],
+      "weighted_score_minimizer": "M"
+    },
+    {
+      "shipment_id": "S20",
+      "purpose": "Delay limit applied before normalization (F at equality)",
+      "status": "recommended",
+      "objectives_available": [
+        "cost",
+        "time",
+        "delay",
+        "geopolitical"
+      ],
+      "balanced_effective_weights": {
+        "cost": 0.25,
+        "time": 0.25,
+        "delay": 0.25,
+        "geopolitical": 0.25
+      },
+      "balanced_weight_source": "default",
+      "methods": {
+        "min_cost": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "F",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_time": {
+          "recommended_route_id": "F",
+          "runner_up_route_id": "R",
+          "score_margin": null,
+          "objectives": {
+            "cost": {
+              "value": 1600.0,
+              "abs_gap": 400.0,
+              "rel_gap": 0.3333333333333333,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 180.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.15,
+              "abs_gap": 0.06999999999999999,
+              "rel_gap": 0.8749999999999999,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.6,
+              "abs_gap": 0.39999999999999997,
+              "rel_gap": 1.9999999999999998,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.75,
+          "balance_gap_B": 3.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "min_risk": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "F",
+          "score_margin": 1.0,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        },
+        "balanced": {
+          "recommended_route_id": "R",
+          "runner_up_route_id": "F",
+          "score_margin": 0.5,
+          "objectives": {
+            "cost": {
+              "value": 1200.0,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 1200.0
+            },
+            "time": {
+              "value": 250.0,
+              "abs_gap": 70.0,
+              "rel_gap": 0.3888888888888889,
+              "best": 180.0
+            },
+            "delay": {
+              "value": 0.08,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.08
+            },
+            "geopolitical": {
+              "value": 0.2,
+              "abs_gap": 0.0,
+              "rel_gap": 0.0,
+              "best": 0.2
+            }
+          },
+          "weighted_score_S": 0.25,
+          "balance_gap_B": 1.0,
+          "non_dominated_all_available": true,
+          "non_dominated_selection": true
+        }
+      },
+      "balance_gap_minimizer": "R",
+      "balance_gap_minimizer_tied_with": [],
+      "weighted_score_minimizer": "R"
+    }
+  ],
+  "aggregate": {
+    "shipments_total": 20,
+    "shipments_scored": 19,
+    "no_feasible_rate": 0.05,
+    "methods": {
+      "min_cost": {
+        "objectives": {
+          "cost": {
+            "mean_value": {
+              "mean": 957.8947368421053,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.0,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.0,
+              "n": 19
+            }
+          },
+          "time": {
+            "mean_value": {
+              "mean": 221.05263157894737,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 28.94736842105263,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.14878863826232247,
+              "n": 19
+            }
+          },
+          "delay": {
+            "mean_value": {
+              "mean": 0.2068421052631579,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.1163157894736842,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 1.7269005847953216,
+              "n": 19
+            }
+          },
+          "geopolitical": {
+            "mean_value": {
+              "mean": 0.2694444444444445,
+              "n": 18
+            },
+            "mean_abs_gap": {
+              "mean": 0.09444444444444444,
+              "n": 18
+            },
+            "mean_rel_gap": {
+              "mean": 1.8888888888888888,
+              "n": 18
+            }
+          }
+        },
+        "mean_weighted_score_S": {
+          "mean": 0.16805842924263978,
+          "n": 19
+        },
+        "mean_balance_gap_B": {
+          "mean": 0.7617909433698907,
+          "n": 19
+        },
+        "non_dominated_all_available_share": 1.0,
+        "tie_rate": {
+          "rate": null,
+          "n": 0
+        }
+      },
+      "min_time": {
+        "objectives": {
+          "cost": {
+            "mean_value": {
+              "mean": 1200.0,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 242.10526315789474,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.23859649122807017,
+              "n": 19
+            }
+          },
+          "time": {
+            "mean_value": {
+              "mean": 192.10526315789474,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.0,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.0,
+              "n": 19
+            }
+          },
+          "delay": {
+            "mean_value": {
+              "mean": 0.14631578947368423,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.05578947368421053,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.9714912280701754,
+              "n": 19
+            }
+          },
+          "geopolitical": {
+            "mean_value": {
+              "mean": 0.4583333333333333,
+              "n": 18
+            },
+            "mean_abs_gap": {
+              "mean": 0.2833333333333333,
+              "n": 18
+            },
+            "mean_rel_gap": {
+              "mean": 3.268518518518518,
+              "n": 18
+            }
+          }
+        },
+        "mean_weighted_score_S": {
+          "mean": 0.2630877716404032,
+          "n": 19
+        },
+        "mean_balance_gap_B": {
+          "mean": 1.0543143279985385,
+          "n": 19
+        },
+        "non_dominated_all_available_share": 1.0,
+        "tie_rate": {
+          "rate": null,
+          "n": 0
+        }
+      },
+      "min_risk": {
+        "objectives": {
+          "cost": {
+            "mean_value": {
+              "mean": 1042.2105263157894,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 84.3157894736842,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.08350877192982456,
+              "n": 19
+            }
+          },
+          "time": {
+            "mean_value": {
+              "mean": 221.68421052631578,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 29.57894736842105,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.1525563909774436,
+              "n": 19
+            }
+          },
+          "delay": {
+            "mean_value": {
+              "mean": 0.11421052631578947,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.02368421052631579,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.29824561403508776,
+              "n": 19
+            }
+          },
+          "geopolitical": {
+            "mean_value": {
+              "mean": 0.18611111111111112,
+              "n": 18
+            },
+            "mean_abs_gap": {
+              "mean": 0.01111111111111111,
+              "n": 18
+            },
+            "mean_rel_gap": {
+              "mean": 0.1111111111111111,
+              "n": 18
+            }
+          }
+        },
+        "mean_weighted_score_S": {
+          "mean": 0.1657832207035808,
+          "n": 19
+        },
+        "mean_balance_gap_B": {
+          "mean": 0.6528267531176118,
+          "n": 19
+        },
+        "non_dominated_all_available_share": 1.0,
+        "tie_rate": {
+          "rate": 0.17647058823529413,
+          "n": 17
+        }
+      },
+      "balanced": {
+        "objectives": {
+          "cost": {
+            "mean_value": {
+              "mean": 1005.3157894736842,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 47.421052631578945,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.047017543859649125,
+              "n": 19
+            }
+          },
+          "time": {
+            "mean_value": {
+              "mean": 215.31578947368422,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 23.210526315789473,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.12354218880534669,
+              "n": 19
+            }
+          },
+          "delay": {
+            "mean_value": {
+              "mean": 0.14526315789473684,
+              "n": 19
+            },
+            "mean_abs_gap": {
+              "mean": 0.05473684210526316,
+              "n": 19
+            },
+            "mean_rel_gap": {
+              "mean": 0.8497076023391813,
+              "n": 19
+            }
+          },
+          "geopolitical": {
+            "mean_value": {
+              "mean": 0.24444444444444446,
+              "n": 18
+            },
+            "mean_abs_gap": {
+              "mean": 0.06944444444444445,
+              "n": 18
+            },
+            "mean_rel_gap": {
+              "mean": 1.1666666666666667,
+              "n": 18
+            }
+          }
+        },
+        "mean_weighted_score_S": {
+          "mean": 0.12996064838516364,
+          "n": 19
+        },
+        "mean_balance_gap_B": {
+          "mean": 0.6093998199399862,
+          "n": 19
+        },
+        "non_dominated_all_available_share": 1.0,
+        "tie_rate": {
+          "rate": 0.17647058823529413,
+          "n": 17
+        }
+      }
+    }
+  },
+  "validation_failures": [
+    {
+      "shipment_id": "X01",
+      "expected_code": "incomplete_risk",
+      "codes": [
+        "incomplete_risk"
+      ],
+      "rejected": true
+    },
+    {
+      "shipment_id": "X02",
+      "expected_code": "objective_requested_without_data",
+      "codes": [
+        "objective_requested_without_data"
+      ],
+      "rejected": true
+    },
+    {
+      "shipment_id": "X03",
+      "expected_code": "weights_sum",
+      "codes": [
+        "weights_sum"
+      ],
+      "rejected": true
+    },
+    {
+      "shipment_id": "X04",
+      "expected_code": "cost_negative",
+      "codes": [
+        "cost_negative"
+      ],
+      "rejected": true
+    }
+  ],
+  "weight_sensitivity": {
+    "perturbations_applied": 148,
+    "perturbations_skipped": 0,
+    "skips_by_reason": {},
+    "perturbations_flipped": 10,
+    "flip_rate": 0.06756756756756757,
+    "shipments_evaluated": 19,
+    "shipments_flipped": [
+      "S07",
+      "S08",
+      "S14",
+      "S19"
+    ],
+    "mean_original_margin_flipped": {
+      "mean": 0.020634920634920634,
+      "n": 4
+    },
+    "mean_original_margin_unflipped": {
+      "mean": 0.1626301587283369,
+      "n": 13
+    },
+    "flips": [
+      {
+        "shipment_id": "S07",
+        "objective": "cost",
+        "direction": "down",
+        "weights": {
+          "cost": 0.15,
+          "time": 0.2833333333333333,
+          "delay": 0.2833333333333333,
+          "geopolitical": 0.2833333333333333
+        },
+        "from": "C",
+        "to": "M",
+        "original_margin": 0.04642857142857143
+      },
+      {
+        "shipment_id": "S07",
+        "objective": "time",
+        "direction": "up",
+        "weights": {
+          "cost": 0.21666666666666667,
+          "time": 0.35,
+          "delay": 0.21666666666666667,
+          "geopolitical": 0.21666666666666667
+        },
+        "from": "C",
+        "to": "M",
+        "original_margin": 0.04642857142857143
+      },
+      {
+        "shipment_id": "S08",
+        "objective": "time",
+        "direction": "down",
+        "weights": {
+          "cost": 0.2833333333333333,
+          "time": 0.15,
+          "delay": 0.2833333333333333,
+          "geopolitical": 0.2833333333333333
+        },
+        "from": "R_A",
+        "to": "R_B",
+        "original_margin": 0.033333333333333326
+      },
+      {
+        "shipment_id": "S08",
+        "objective": "delay",
+        "direction": "up",
+        "weights": {
+          "cost": 0.21666666666666667,
+          "time": 0.21666666666666667,
+          "delay": 0.35,
+          "geopolitical": 0.21666666666666667
+        },
+        "from": "R_A",
+        "to": "R_B",
+        "original_margin": 0.033333333333333326
+      },
+      {
+        "shipment_id": "S14",
+        "objective": "cost",
+        "direction": "down",
+        "weights": {
+          "cost": 0.15,
+          "time": 0.2833333333333333,
+          "delay": 0.2833333333333333,
+          "geopolitical": 0.2833333333333333
+        },
+        "from": "A",
+        "to": "B",
+        "original_margin": 0.002777777777777782
+      },
+      {
+        "shipment_id": "S14",
+        "objective": "delay",
+        "direction": "up",
+        "weights": {
+          "cost": 0.21666666666666667,
+          "time": 0.21666666666666667,
+          "delay": 0.35,
+          "geopolitical": 0.21666666666666667
+        },
+        "from": "A",
+        "to": "B",
+        "original_margin": 0.002777777777777782
+      },
+      {
+        "shipment_id": "S19",
+        "objective": "cost",
+        "direction": "up",
+        "weights": {
+          "cost": 0.35,
+          "time": 0.21666666666666667,
+          "delay": 0.21666666666666667,
+          "geopolitical": 0.21666666666666667
+        },
+        "from": "M",
+        "to": "C",
+        "original_margin": 0.0
+      },
+      {
+        "shipment_id": "S19",
+        "objective": "time",
+        "direction": "down",
+        "weights": {
+          "cost": 0.2833333333333333,
+          "time": 0.15,
+          "delay": 0.2833333333333333,
+          "geopolitical": 0.2833333333333333
+        },
+        "from": "M",
+        "to": "C",
+        "original_margin": 0.0
+      },
+      {
+        "shipment_id": "S19",
+        "objective": "delay",
+        "direction": "down",
+        "weights": {
+          "cost": 0.2833333333333333,
+          "time": 0.2833333333333333,
+          "delay": 0.15,
+          "geopolitical": 0.2833333333333333
+        },
+        "from": "M",
+        "to": "C",
+        "original_margin": 0.0
+      },
+      {
+        "shipment_id": "S19",
+        "objective": "geopolitical",
+        "direction": "up",
+        "weights": {
+          "cost": 0.21666666666666667,
+          "time": 0.21666666666666667,
+          "delay": 0.21666666666666667,
+          "geopolitical": 0.35
+        },
+        "from": "M",
+        "to": "C",
+        "original_margin": 0.0
+      }
+    ]
+  },
+  "delay_sensitivity": {
+    "uniform": {
+      "min_cost": {
+        "perturbations_applied": 38,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 0,
+        "flip_rate": 0.0,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [],
+        "mean_original_margin_flipped": {
+          "mean": null,
+          "n": 0
+        },
+        "mean_original_margin_unflipped": {
+          "mean": null,
+          "n": 0
+        },
+        "flips": [],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "min_time": {
+        "perturbations_applied": 38,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 0,
+        "flip_rate": 0.0,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [],
+        "mean_original_margin_flipped": {
+          "mean": null,
+          "n": 0
+        },
+        "mean_original_margin_unflipped": {
+          "mean": null,
+          "n": 0
+        },
+        "flips": [],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "min_risk": {
+        "perturbations_applied": 38,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 0,
+        "flip_rate": 0.0,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [],
+        "mean_original_margin_flipped": {
+          "mean": null,
+          "n": 0
+        },
+        "mean_original_margin_unflipped": {
+          "mean": 0.28025852437617144,
+          "n": 17
+        },
+        "flips": [],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "balanced": {
+        "perturbations_applied": 38,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 1,
+        "flip_rate": 0.02631578947368421,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [
+          "S14"
+        ],
+        "mean_original_margin_flipped": {
+          "mean": 0.002777777777777782,
+          "n": 1
+        },
+        "mean_original_margin_unflipped": {
+          "mean": 0.13712212301439275,
+          "n": 16
+        },
+        "flips": [
+          {
+            "shipment_id": "S14",
+            "eps": 0.05,
+            "override": {
+              "A": 0.32,
+              "B": 0.15000000000000002,
+              "C": 1.0
+            },
+            "from": "A",
+            "to": "B",
+            "original_margin": 0.002777777777777782
+          }
+        ],
+        "limit_crossings_counted_not_applied": 1
+      }
+    },
+    "route_specific": {
+      "min_cost": {
+        "perturbations_applied": 106,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 4,
+        "flip_rate": 0.03773584905660377,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [
+          "S13",
+          "S17"
+        ],
+        "mean_original_margin_flipped": {
+          "mean": null,
+          "n": 0
+        },
+        "mean_original_margin_unflipped": {
+          "mean": null,
+          "n": 0
+        },
+        "flips": [
+          {
+            "shipment_id": "S13",
+            "eps": 0.05,
+            "override": {
+              "R1": 0.15000000000000002
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S13",
+            "eps": -0.05,
+            "override": {
+              "R2": 0.05
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S17",
+            "eps": 0.05,
+            "override": {
+              "R_A": 0.16999999999999998
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S17",
+            "eps": -0.05,
+            "override": {
+              "R_B": 0.06999999999999999
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": null
+          }
+        ],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "min_time": {
+        "perturbations_applied": 106,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 4,
+        "flip_rate": 0.03773584905660377,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [
+          "S13",
+          "S17"
+        ],
+        "mean_original_margin_flipped": {
+          "mean": null,
+          "n": 0
+        },
+        "mean_original_margin_unflipped": {
+          "mean": null,
+          "n": 0
+        },
+        "flips": [
+          {
+            "shipment_id": "S13",
+            "eps": 0.05,
+            "override": {
+              "R1": 0.15000000000000002
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S13",
+            "eps": -0.05,
+            "override": {
+              "R2": 0.05
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S17",
+            "eps": 0.05,
+            "override": {
+              "R_A": 0.16999999999999998
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": null
+          },
+          {
+            "shipment_id": "S17",
+            "eps": -0.05,
+            "override": {
+              "R_B": 0.06999999999999999
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": null
+          }
+        ],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "min_risk": {
+        "perturbations_applied": 106,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 10,
+        "flip_rate": 0.09433962264150944,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [
+          "S02",
+          "S07",
+          "S12",
+          "S13",
+          "S17"
+        ],
+        "mean_original_margin_flipped": {
+          "mean": 0.05871496924128503,
+          "n": 5
+        },
+        "mean_original_margin_unflipped": {
+          "mean": 0.37256833901570746,
+          "n": 12
+        },
+        "flips": [
+          {
+            "shipment_id": "S02",
+            "eps": 0.05,
+            "override": {
+              "M": 0.14
+            },
+            "from": "M",
+            "to": "C",
+            "original_margin": 0.04545454545454549
+          },
+          {
+            "shipment_id": "S02",
+            "eps": -0.05,
+            "override": {
+              "C": 0.05
+            },
+            "from": "M",
+            "to": "C",
+            "original_margin": 0.04545454545454549
+          },
+          {
+            "shipment_id": "S07",
+            "eps": 0.05,
+            "override": {
+              "C": 0.2
+            },
+            "from": "C",
+            "to": "M",
+            "original_margin": 0.14285714285714282
+          },
+          {
+            "shipment_id": "S07",
+            "eps": -0.05,
+            "override": {
+              "M": 0.09999999999999999
+            },
+            "from": "C",
+            "to": "M",
+            "original_margin": 0.14285714285714282
+          },
+          {
+            "shipment_id": "S12",
+            "eps": 0.05,
+            "override": {
+              "Q": 0.16999999999999998
+            },
+            "from": "Q",
+            "to": "P",
+            "original_margin": 0.10526315789473686
+          },
+          {
+            "shipment_id": "S12",
+            "eps": -0.05,
+            "override": {
+              "P": 0.11
+            },
+            "from": "Q",
+            "to": "P",
+            "original_margin": 0.10526315789473686
+          },
+          {
+            "shipment_id": "S13",
+            "eps": 0.05,
+            "override": {
+              "R1": 0.15000000000000002
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S13",
+            "eps": -0.05,
+            "override": {
+              "R2": 0.05
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S17",
+            "eps": 0.05,
+            "override": {
+              "R_A": 0.16999999999999998
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S17",
+            "eps": -0.05,
+            "override": {
+              "R_B": 0.06999999999999999
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.0
+          }
+        ],
+        "limit_crossings_counted_not_applied": 1
+      },
+      "balanced": {
+        "perturbations_applied": 106,
+        "perturbations_skipped": 0,
+        "skips_by_reason": {},
+        "perturbations_flipped": 12,
+        "flip_rate": 0.11320754716981132,
+        "shipments_evaluated": 19,
+        "shipments_flipped": [
+          "S07",
+          "S08",
+          "S13",
+          "S14",
+          "S17"
+        ],
+        "mean_original_margin_flipped": {
+          "mean": 0.016507936507936506,
+          "n": 5
+        },
+        "mean_original_margin_unflipped": {
+          "mean": 0.17618267195569828,
+          "n": 12
+        },
+        "flips": [
+          {
+            "shipment_id": "S07",
+            "eps": 0.05,
+            "override": {
+              "C": 0.2
+            },
+            "from": "C",
+            "to": "M",
+            "original_margin": 0.04642857142857143
+          },
+          {
+            "shipment_id": "S07",
+            "eps": -0.05,
+            "override": {
+              "F": 0.09999999999999999
+            },
+            "from": "C",
+            "to": "F",
+            "original_margin": 0.04642857142857143
+          },
+          {
+            "shipment_id": "S07",
+            "eps": -0.05,
+            "override": {
+              "M": 0.09999999999999999
+            },
+            "from": "C",
+            "to": "M",
+            "original_margin": 0.04642857142857143
+          },
+          {
+            "shipment_id": "S08",
+            "eps": 0.05,
+            "override": {
+              "R_C": 0.1
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.033333333333333326
+          },
+          {
+            "shipment_id": "S08",
+            "eps": -0.05,
+            "override": {
+              "R_B": 0.05
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.033333333333333326
+          },
+          {
+            "shipment_id": "S13",
+            "eps": 0.05,
+            "override": {
+              "R1": 0.15000000000000002
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S13",
+            "eps": -0.05,
+            "override": {
+              "R2": 0.05
+            },
+            "from": "R1",
+            "to": "R2",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S14",
+            "eps": 0.05,
+            "override": {
+              "A": 0.32
+            },
+            "from": "A",
+            "to": "B",
+            "original_margin": 0.002777777777777782
+          },
+          {
+            "shipment_id": "S14",
+            "eps": -0.05,
+            "override": {
+              "B": 0.05
+            },
+            "from": "A",
+            "to": "B",
+            "original_margin": 0.002777777777777782
+          },
+          {
+            "shipment_id": "S14",
+            "eps": -0.05,
+            "override": {
+              "C": 0.95
+            },
+            "from": "A",
+            "to": "B",
+            "original_margin": 0.002777777777777782
+          },
+          {
+            "shipment_id": "S17",
+            "eps": 0.05,
+            "override": {
+              "R_A": 0.16999999999999998
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.0
+          },
+          {
+            "shipment_id": "S17",
+            "eps": -0.05,
+            "override": {
+              "R_B": 0.06999999999999999
+            },
+            "from": "R_A",
+            "to": "R_B",
+            "original_margin": 0.0
+          }
+        ],
+        "limit_crossings_counted_not_applied": 1
+      }
+    }
+  }
+}

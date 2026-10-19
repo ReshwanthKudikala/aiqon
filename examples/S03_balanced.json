@@ -1,0 +1,119 @@
+{
+  "shipment_id": "S03",
+  "origin": "Shanghai",
+  "destination": "Rotterdam",
+  "priority": "balanced",
+  "routes": [
+    {
+      "route_id": "C",
+      "cost": 1000,
+      "transit_hours": 240,
+      "delay_probability": 0.4,
+      "risks": {
+        "geopolitical": 0.2,
+        "congestion": 0.6
+      },
+      "legs": [
+        {
+          "from": "Shanghai",
+          "to": "Singapore",
+          "mode": "sea",
+          "cost": 400,
+          "transit_hours": 100
+        },
+        {
+          "from": "Singapore",
+          "to": "Rotterdam",
+          "mode": "sea",
+          "cost": 600,
+          "transit_hours": 140
+        }
+      ]
+    },
+    {
+      "route_id": "R",
+      "cost": 1200,
+      "transit_hours": 250,
+      "delay_probability": 0.08,
+      "risks": {
+        "geopolitical": 0.2,
+        "congestion": 0.3
+      },
+      "legs": [
+        {
+          "from": "Shanghai",
+          "to": "Colombo",
+          "mode": "sea",
+          "cost": 500,
+          "transit_hours": 110
+        },
+        {
+          "from": "Colombo",
+          "to": "Rotterdam",
+          "mode": "sea",
+          "cost": 700,
+          "transit_hours": 140
+        }
+      ]
+    },
+    {
+      "route_id": "F",
+      "cost": 1600,
+      "transit_hours": 180,
+      "delay_probability": 0.15,
+      "risks": {
+        "geopolitical": 0.6,
+        "congestion": 0.5
+      },
+      "legs": [
+        {
+          "from": "Shanghai",
+          "to": "Dubai",
+          "mode": "sea",
+          "cost": 700,
+          "transit_hours": 100
+        },
+        {
+          "from": "Dubai",
+          "to": "Rotterdam",
+          "mode": "air",
+          "cost": 900,
+          "transit_hours": 80
+        }
+      ]
+    },
+    {
+      "route_id": "D",
+      "cost": 1800,
+      "transit_hours": 300,
+      "delay_probability": 0.5,
+      "risks": {
+        "geopolitical": 0.9,
+        "congestion": 0.7
+      },
+      "legs": [
+        {
+          "from": "Shanghai",
+          "to": "Singapore",
+          "mode": "sea",
+          "cost": 400,
+          "transit_hours": 100
+        },
+        {
+          "from": "Singapore",
+          "to": "Piraeus",
+          "mode": "sea",
+          "cost": 800,
+          "transit_hours": 130
+        },
+        {
+          "from": "Piraeus",
+          "to": "Rotterdam",
+          "mode": "rail",
+          "cost": 600,
+          "transit_hours": 70
+        }
+      ]
+    }
+  ]
+}
