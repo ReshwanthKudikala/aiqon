@@ -2,7 +2,7 @@
 
 Recommends one shipment route from a supplied set of options, under cost, transit-time, delay-probability and geopolitical-risk trade-offs, and explains the choice in operator terms using only the numbers that produced it.
 
-Built for the Aiqon AI Internship take-home *Optimizing Shipment Routes Under Cost, Time, and Risk Constraints*. The technical report is in [`docs/technical_report.md`](docs/technical_report.md); measured evaluation output is in [`results/evaluation.md`](results/evaluation.md) and [`results/evaluation.json`](results/evaluation.json).
+Built for the Aiqon AI Internship take-home *Optimizing Shipment Routes Under Cost, Time, and Risk Constraints*. The technical report is [`docs/technical_report.pdf`](docs/technical_report.pdf) (3 pages; editable source [`docs/technical_report.md`](docs/technical_report.md)); measured evaluation output is in [`results/evaluation.md`](results/evaluation.md) and [`results/evaluation.json`](results/evaluation.json).
 
 ## What it does
 
@@ -13,7 +13,7 @@ Built for the Aiqon AI Internship take-home *Optimizing Shipment Routes Under Co
 
 ## Install and run
 
-Python 3.10+. The only dependency is `pytest`, for the tests.
+Python 3.10+ (developed and tested on 3.13.9; no syntax newer than 3.10 is used). The only dependency is `pytest`, for the tests.
 
 ```bash
 python -m venv .venv
@@ -29,6 +29,8 @@ pytest -q
 ```
 
 Without installing: set `PYTHONPATH=src` and use `python -m shipment_decision ...`. Exit code is 0 for `recommended`/`no_feasible_route`, 2 for `invalid_input`.
+
+To rebuild the report PDF from the Markdown source: `python scripts/build_report.py --pdf` (standard library only; uses an installed Edge or Chrome in headless mode to print `docs/technical_report.html` to `docs/technical_report.pdf` with page numbers).
 
 ## Example
 
@@ -131,10 +133,12 @@ Sensitivity (deterministic perturbations, not calibrated uncertainty):
 README.md
 pyproject.toml            # package metadata; pytest config (pythonpath = src)
 requirements.txt          # pytest
-docs/technical_report.md  # 2-3 page report (approach, decisions, results, limitations)
+docs/technical_report.pdf # 3-page report (approach, decisions, results, limitations)
+docs/technical_report.md  # editable source of the report
 examples/                 # S03, S10, S12, X01 as standalone inputs
 results/                  # measured evaluation.md / evaluation.json
 scripts/demo.ps1, demo.sh # < 5 minute command-line walkthrough
+scripts/build_report.py   # Markdown -> HTML -> PDF (stdlib + headless Edge/Chrome)
 src/shipment_decision/
   constants.py            # tolerances and vocabularies
   validate.py             # schema, common-support rule, weights -> ValidatedShipment
