@@ -35,38 +35,63 @@ HTML_OUT = ROOT / "docs" / "technical_report.html"
 PDF_OUT = ROOT / "docs" / "technical_report.pdf"
 
 CSS = """
-@page { size: A4; margin: 18mm 17mm 20mm 17mm; }
-html { font-size: 10.4pt; }
-body { font-family: Georgia, 'Times New Roman', serif; color: #111; line-height: 1.38; margin: 0; }
-h1 { font-family: Arial, Helvetica, sans-serif; font-size: 17pt; margin: 0 0 4pt 0; line-height: 1.2; }
-h2 { font-family: Arial, Helvetica, sans-serif; font-size: 11.6pt; margin: 11pt 0 4pt 0; padding-bottom: 1.5pt;
-     border-bottom: 0.6pt solid #888; page-break-after: avoid; }
-p { margin: 0 0 5.5pt 0; text-align: justify; }
-p.lead { color: #333; font-size: 9.6pt; text-align: left; }
-ul { margin: 0 0 6pt 0; padding-left: 16pt; }
-li { margin: 0 0 2.5pt 0; text-align: justify; }
-code { font-family: Consolas, 'Courier New', monospace; font-size: 9pt; background: #f2f2f2; padding: 0 2px; }
-blockquote { margin: 3pt 0 7pt 10pt; padding: 3pt 8pt; border-left: 2.5pt solid #999; background: #f7f7f7;
-             font-size: 9.4pt; color: #222; }
-blockquote p { margin: 0; text-align: left; }
-table { border-collapse: collapse; width: 100%; margin: 3pt 0 8pt 0; font-size: 9.2pt; page-break-inside: avoid;
-        font-family: Arial, Helvetica, sans-serif; }
-th, td { border: 0.6pt solid #999; padding: 2.5pt 5pt; vertical-align: top; text-align: left; }
-th { background: #e8e8e8; font-weight: bold; }
-td.num, th.num { text-align: right; }
+@page { size: A4; margin: 17mm 16mm 20mm 16mm; }
+html { font-size: 10.5pt; }
+body { font-family: Georgia, 'Times New Roman', serif; color: #111; line-height: 1.4; margin: 0; }
+h1 { font-family: Arial, Helvetica, sans-serif; font-size: 16pt; margin: 0 0 6pt 0; line-height: 1.25;
+     color: #0d0d0d; }
+h2 { font-family: Arial, Helvetica, sans-serif; font-size: 11.7pt; margin: 11pt 0 5pt 0; padding-bottom: 2pt;
+     border-bottom: 0.6pt solid #888; page-break-after: avoid; break-after: avoid; color: #0d0d0d; }
+p { margin: 0 0 6pt 0; text-align: left; orphans: 3; widows: 3; }
+p.lead { color: #333; font-size: 10pt; line-height: 1.4; margin: 0 0 4pt 0; }
+p.repo { font-family: Arial, Helvetica, sans-serif; font-size: 9.6pt; margin: 0 0 9pt 0; }
+ul { margin: 0 0 7pt 0; padding-left: 16pt; }
+li { margin: 0 0 3.2pt 0; text-align: left; page-break-inside: avoid; break-inside: avoid; }
+code { font-family: Consolas, 'Courier New', monospace; font-size: 0.88em; background: #f3f3f3;
+       padding: 0 2.5px; }
+a { color: #0b57d0; text-decoration: underline; }
+blockquote { margin: 4pt 0 8pt 0; padding: 5pt 9pt; border-left: 2.5pt solid #888; background: #f6f6f6;
+             font-size: 9.6pt; color: #222; page-break-inside: avoid; break-inside: avoid; }
+blockquote p { margin: 0; }
+table { border-collapse: collapse; width: 100%; margin: 4pt 0 8pt 0; font-size: 9.15pt;
+        page-break-inside: avoid; break-inside: avoid; font-family: Arial, Helvetica, sans-serif; }
+thead { display: table-header-group; }
+th, td { border: 0.6pt solid #999; padding: 3pt 5.5pt; vertical-align: top; text-align: left; }
+th { background: #ececec; font-weight: bold; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+p:has(+ table) { page-break-after: avoid; break-after: avoid; }
 strong { font-weight: bold; }
 """
 
 NUMERIC = re.compile(r"^[\d.,\-+/%() ]+$|^(n=\d+)$")
 
 
+_INLINE = re.compile(
+    r"`([^`]+)`"
+    r"|\[([^\]]+)\]\((https?://[^)\s]+)\)"
+    r"|(https://[^\s]+)"
+)
+
+
 def inline(text: str) -> str:
-    """Escape HTML then apply inline markup: `code`, **bold**, *italic*."""
+    """Escape HTML then apply `code`, [text](url), autolinks, **bold**, *italic*."""
     out: list[str] = []
     pos = 0
-    for m in re.finditer(r"`([^`]+)`", text):
+    for m in _INLINE.finditer(text):
         out.append(_emphasis(html.escape(text[pos:m.start()])))
-        out.append(f"<code>{html.escape(m.group(1))}</code>")
+        if m.group(1) is not None:
+            out.append(f"<code>{html.escape(m.group(1))}</code>")
+        elif m.group(2) is not None:
+            href = html.escape(m.group(3), quote=True)
+            out.append(f'<a href="{href}">{html.escape(m.group(2))}</a>')
+        else:
+            url = m.group(4)
+            trail = ""
+            while url and url[-1] in ".,;:)":
+                trail = url[-1] + trail
+                url = url[:-1]
+            href = html.escape(url, quote=True)
+            out.append(f'<a href="{href}">{html.escape(url)}</a>{html.escape(trail)}')
         pos = m.end()
     out.append(_emphasis(html.escape(text[pos:])))
     return "".join(out)
@@ -135,9 +160,15 @@ def convert(md: str) -> str:
             para = []
             while i < len(lines) and lines[i].strip() and not re.match(r"^(#{1,6} |- |>|\s*\|)", lines[i]):
                 para.append(lines[i].strip()); i += 1
-            cls = ' class="lead"' if first_paragraph_after_h1 else ""
-            first_paragraph_after_h1 = False
-            out.append(f"<p{cls}>{inline(' '.join(para))}</p>")
+            text = " ".join(para)
+            if first_paragraph_after_h1:
+                cls = ' class="lead"'
+                first_paragraph_after_h1 = False
+            elif text.startswith("Repository:"):
+                cls = ' class="repo"'
+            else:
+                cls = ""
+            out.append(f"<p{cls}>{inline(text)}</p>")
     title = re.search(r"^# (.+)$", md, re.M)
     return (
         "<!DOCTYPE html><html><head><meta charset=\"utf-8\">"
@@ -280,7 +311,7 @@ def to_pdf(html_path: Path, pdf_path: Path) -> None:
                 time.sleep(0.1)
             result = call("Page.printToPDF", printBackground=True, preferCSSPageSize=True,
                           displayHeaderFooter=True, headerTemplate="<div></div>", footerTemplate=FOOTER,
-                          marginTop=0.71, marginBottom=0.79, marginLeft=0.67, marginRight=0.67)
+                          marginTop=0.67, marginBottom=0.79, marginLeft=0.63, marginRight=0.63)
             pdf_path.write_bytes(base64.b64decode(result["data"]))
             ws.close()
         finally:

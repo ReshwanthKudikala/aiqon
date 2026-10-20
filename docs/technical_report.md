@@ -1,6 +1,8 @@
 # Optimizing Shipment Routes Under Cost, Time, and Risk Constraints
 
-Technical report for the Aiqon AI Internship take-home. Repository: this project. All numbers below are produced by `shipment-decision evaluate` and `pytest`, and are reproducible from the literals in `src/shipment_decision/corpus.py`.
+Technical report for the Aiqon AI Internship take-home. All numbers below are produced by `shipment-decision evaluate` and `pytest`, and are reproducible from the literals in `src/shipment_decision/corpus.py`.
+
+Repository: [https://github.com/ReshwanthKudikala/aiqon](https://github.com/ReshwanthKudikala/aiqon)
 
 ## 1. Problem framing and what "optimal" means here
 
